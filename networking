@@ -1,0 +1,89 @@
+Script started on Monday 01 April 2019 09:30:04 AM IST
+]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:192.168.0.153  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:26301 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:14155 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:18507625 (18.5 MB)  TX bytes:2028532 (2.0 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:663 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:663 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:108868 (108.8 KB)  TX bytes:108868 (108.8 KB)
+
+]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ ifconfig -a
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:192.168.0.153  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:26338 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:14175 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:18510746 (18.5 MB)  TX bytes:2029990 (2.0 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:663 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:663 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:108868 (108.8 KB)  TX bytes:108868 (108.8 KB)
+
+]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ ifconfig eth0 21[K[K216.3.128.12,[K
+SIOCSIFADDR: Operation not permitted
+SIOCSIFFLAGS: Operation not permitted
+]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ sudo ifconfig eth0 2[K216.3.128.12,[K
+sudo: unable to resolve host CC2-28
+[sudo] password for cec-lab2: 
+]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ ip[K[Kifconfig
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:216.3.128.12  Bcast:216.3.128.255  Mask:255.255.255.0
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:27047 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:14523 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:18695677 (18.6 MB)  TX bytes:2078560 (2.0 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:687 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:687 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:110260 (110.2 KB)  TX bytes:110260 (110.2 KB)
+
+]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ ifconfig[K[K[K[K[K[K[K[Kexit[K[K[K[Kifci[Konfig eyj[K[Kth0 up
+SIOCSIFFLAGS: Operation not permitted
+]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ ifconfig eth0 doe[Kwn
+SIOCSIFFLAGS: Operation not permitted
+]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ sudo ifconfig eth0 up
+sudo: unable to resolve host CC2-28
+]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ sudo ifconfig eth0 down
+sudo: unable to resolve host CC2-28
+]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ ifconfig
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:830 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:830 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:171792 (171.7 KB)  TX bytes:171792 (171.7 KB)
+cec-lab2@CC2-28:~$ sudo ifconfig eth0 up
+cec-lab2@CC2-28:~$ sudo ifconfig etho down
+
+
+]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ exit
+exit
+
+Script done on Monday 01 April 2019 09:34:46 AM IST
