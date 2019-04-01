@@ -27,7 +27,8 @@ $ put av bc   foss
 $ cd cs` 	  foss
 -sh: 8: cd: can't cd to foss
 $ exit
-Connection to 192.168.0.30 closed.
+Connection to 192.168.0.30 closed.
+
 ]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ scp cs17d51 [K[K[K[K[K[K[K[K[K[K[K[Kscp cs17d[K[K[K[K[Kcs232-master.zip cs17d51@192.168.0.30;[K:~
 .
               |
@@ -35,24 +36,15 @@ Connection to 192.168.0.30 closed.
  \  \  / (.-' |(  (   )|  |  |(.-'
   `' `'   `--'` `-'`-' '  '  ` `--'
 cs17d51@192.168.0.30's password: 
-cs232-master.zip                                                           0%    0     0.0KB/s   --:-- ETAcs232-master.zip                                                         100% 9765     9.5KB/s   00:00    
+
+cs232-master.zip                                                           0%    0     0.0KB/s   --:-- ETA
+cs232-master.zip                                                         100% 9765     9.5KB/s   00:00    
 ]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ ls
 280319      [0m[01;31mcs232-master.zip[0m  examples.desktop                        networking  ssh         [01;34mworkspace[0m
 [01;34mabc[0m         [01;34mDesktop[0m           [01;31mgoogle-chrome-stable_current_amd64.deb[0m  [01;34mPictures[0m    [01;34mTemplates[0m
 [01;32ma.out[0m       [01;34mDocuments[0m         [01;34mkp[0m                                      [34;42mprn[0m         typescript
 [01;34mceccs17d02[0m  [01;34mDownloads[0m         [01;34mMusic[0m                                   [01;34mPublic[0m      [01;34mVideos[0m
-]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ put cs232-master.zip 
-No command 'put' found, did you mean:
- Command 'bput' from package 'ax25-tools' (universe)
- Command 'cut' from package 'coreutils' (main)
- Command 'dput' from package 'dput' (main)
- Command 'dput' from package 'dput-ng' (universe)
- Command 'pat' from package 'dist' (universe)
- Command 'wput' from package 'wput' (universe)
- Command 'puf' from package 'puf' (universe)
- Command 'tput' from package 'ncurses-bin' (main)
- Command 'ppt' from package 'bsdgames' (universe)
-put: command not found
+
 ]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ put cs232-master.zip [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kscp cs232-master.zip @cs17d[K[K[K[K[K[Kcs17d51@192.168.0.30:~
 .
               |
@@ -60,7 +52,9 @@ put: command not found
  \  \  / (.-' |(  (   )|  |  |(.-'
   `' `'   `--'` `-'`-' '  '  ` `--'
 cs17d51@192.168.0.30's password: 
-cs232-master.zip                                                           0%    0     0.0KB/s   --:-- ETAcs232-master.zip                                                         100% 9765     9.5KB/s   00:00    
+
+cs232-master.zip                                                           0%    0     0.0KB/s   --:-- ETA
+cs232-master.zip                                                         100% 9765     9.5KB/s   00:00    
 ]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ ssh cs17d51@192.18[K68.0.30
 .
               |
@@ -68,7 +62,8 @@ cs17d51@192.168.0.30's password:
  \  \  / (.-' |(  (   )|  |  |(.-'
   `' `'   `--'` `-'`-' '  '  ` `--'
 cs17d51@192.168.0.30's password: 
-Permission denied, please try again.
+Permission denied, please try again.
+
 cs17d51@192.168.0.30's password: 
 Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
 
@@ -77,14 +72,16 @@ Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
 278 packages can be updated.
 0 updates are security updates.
 
-Last login: Mon Apr  1 09:15:21 2019 from 192.168.0.153
+Last login: Mon Apr  1 09:15:21 2019 from 192.168.0.153
+
 $ ls
 cs232-master.zip
 $ sftp csd51@    17d51@192.168.0.30
 The authenticity of host '192.168.0.30 (192.168.0.30)' can't be established.
 ECDSA key fingerprint is SHA256:pkLWQEXAwg4Zdh5CXNYydUTPcU7dwDFxyzJnqJ01m/s.
 Are you sure you want to continue connecting (yes/no)? yes
-Warning: Permanently added '192.168.0.30' (ECDSA) to the list of known hosts.
+Warning: Permanently added '192.168.0.30' (ECDSA) to the list of known hosts.
+
 .
               |
 .  .    . .-. | .-..-. .--.--. .-.
@@ -96,18 +93,24 @@ sftp> ls
 cs232-master.zip     
 sftp> put [K[K[K ls
 cs232-master.zip     
-sftp> put [K[K[Kget master[K[K[K[K[K[Kcs[Ksftp> get cs232-master.zip 
+sftp> put [K[K[Kget master[K[K[K[K[K[Kcs
+[Ksftp> get cs232-master.zip 
 Fetching /home/cs17d51/cs232-master.zip to cs232-master.zip
-/home/cs17d51/cs232-master.zip                                             0%    0     0.0KB/s   --:-- ETA/home/cs17d51/cs232-master.zip                                             0%    0     0.0KB/s   --:-- ETA
+
+/home/cs17d51/cs232-master.zip                                             0%    0     0.0KB/s   --:-- ETA
+/home/cs17d51/cs232-master.zip                                             0%    0     0.0KB/s   --:-- ETA
 sftp> exit
 $ rsync local-file user@remote-host:remote-file
-ssh: Could not resolve hostname remote-host: Name or service not known
+ssh: Could not resolve hostname remote-host: Name or service not known
+
 rsync: connection unexpectedly closed (0 bytes received so far) [sender]
 rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
 $ exit
-Connection to 192.168.0.30 closed.
+Connection to 192.168.0.30 closed.
+
 ]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ rsync local-file user@remote-host:remote-file
-ssh: Could not resolve hostname remote-host: Name or service not known
+ssh: Could not resolve hostname remote-host: Name or service not known
+
 rsync: connection unexpectedly closed (0 bytes received so far) [sender]
 rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.0]
 ]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ rsync local-file user@remote-host:remote-file[1P user@remote-host:remote-file[1P user@remote-host:remote-file[1P user@remote-host:remote-file[1P user@remote-host:remote-file[1P user@remote-host:remote-file[1P user@remote-host:remote-file[1P user@remote-host:remote-file[1P user@remote-host:remote-file[1P user@remote-host:remote-file[1P user@remote-host:remote-filec user@remote-host:remote-files user@remote-host:remote-file232-master.zip  user@remote-host:remote-file[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[Kcs232[C[1P@remote-host:cs232[1P@remote-host:cs232[1P@remote-host:cs232[1P@remote-host:cs232C@remote-host:cs232S@remote-host:cs2321@remote-host:cs2327@remote-host:cs232D@remote-host:cs232[1P@remote-host:cs232[1P@remote-host:cs232[1P@remote-host:cs232[1P@remote-host:cs232[1P@remote-host:cs232c@remote-host:cs232s@remote-host:cs2321@remote-host:cs2327@remote-host:cs232d@remote-host:cs2325@remote-host:cs2321@remote-host:cs232[C[C[C[C[C[C[C[C[C[C[C[C[1P:cs232[1P:cs232[1P:cs232[1P:cs232[1P:cs232[1P:cs232[1P:cs232[1P:cs232[1P:cs232[1P:cs232[1P:cs2321:cs2329:cs2322:cs232.:cs2321:cs2326:cs2328:cs232.:cs2320:cs232.:cs2323:cs2320:cs232[C[C[C[C[C[C
@@ -117,9 +120,19 @@ rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.0]
  \  \  / (.-' |(  (   )|  |  |(.-'
   `' `'   `--'` `-'`-' '  '  ` `--'
 cs17d51@192.168.0.30's password: 
-Permission denied, please try again.
+Permission denied, please try again.
+
 cs17d51@192.168.0.30's password: 
 ]0;cec-lab2@CC2-28: ~cec-lab2@CC2-28:~$ rsync cs232-master.zip  cs17d51@192.168.0.30:cs232
+cec-lab2@CC2-28:~$  rsync -avzh cs232/ cs17d42@192.168.0.30:
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d42@192.168.0.30's password: 
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(632) [sender=3.1.0]
+
 .
               |
 .  .    . .-. | .-..-. .--.--. .-.
