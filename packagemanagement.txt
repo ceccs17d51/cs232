@@ -1,0 +1,42 @@
+s4d@user-Inspiron-15-3567:~$ su
+Password: 
+root@user-Inspiron-15-3567:/home/s4d# apt update
+Ign:1 http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu bionic InRelease                                                                              
+Err:3 http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu bionic Release                                                                    
+  404  Not Found [IP: 91.189.95.83 80]
+Get:2 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease [15.4 kB]                                                       
+E: Repository 'http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease' changed its 'Label' value from 'Oracle Java (JDK) 8 / 9 Installer PPA' to 'Oracle Java (JDK) 8 Installer PPA'
+N: This must be accepted explicitly before updates for this repository can be applied. See apt-secure(8) manpage for details.
+Do you want to accept these changes and continue updating from this repository? [y/N] y
+Hit:4 http://in.archive.ubuntu.com/ubuntu bionic InRelease                                                                                                            
+Get:5 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]                                                                                          
+Get:6 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]                                                                                        
+Get:7 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]                                                                                           
+Ign:8 http://archive.canonical.com precise InRelease                                                                                                                  
+Get:9 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic/main i386 Packages [1,556 B]                                                                            
+Get:10 http://archive.canonical.com precise Release [8,180 B]                                                                                                         
+Get:11 http://security.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [204 B]                                                                           
+Get:12 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [278 kB]                                                                         
+Get:13 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [20.8 kB]                                                                     
+Get:14 http://archive.canonical.com precise Release.gpg [181 B]                                                                                                       
+Ign:14 http://archive.canonical.com precise Release.gpg                                                                                                               
+Get:15 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic/main amd64 Packages [1,556 B]                                                                          
+Get:16 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 64x64 Icons [45.2 kB]                                                                        
+Get:17 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 DEP-11 Metadata [2,464 B]                                                                   
+Get:18 http://in.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 48x48 Icons [66.7 kB]                                                                           
+Get:19 http://in.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 64x64 Icons [123 kB]                                                                            
+Get:20 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [209 kB]                                                                     
+Get:21 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 48x48 Icons [186 kB]                                                                        
+Get:22 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 64x64 Icons [351 kB]                                                                        
+Get:23 http://in.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2,468 B]                                                                  
+Get:24 http://in.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [7,352 B]                                                                  
+Reading package lists... Done                                                                                                                                         
+E: The repository 'http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu bionic Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+W: GPG error: http://archive.canonical.com precise Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 40976EAF437D05B5
+E: The repository 'http://archive.canonical.com precise Release' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+root@user-Inspiron-15-3567:/home/s4d# 
+
