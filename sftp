@@ -1,0 +1,28 @@
+4d@user-Inspiron-15-3567:~$ script sftp
+Script started, file is sftp
+s4d@user-Inspiron-15-3567:~$ sftp cs17d51@14.139.189.217
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d51@14.139.189.217's password: 
+Connected to 14.139.189.217.
+sftp> pwd
+Remote working directory: /home/cs17d51
+sftp> ls
+cs232-master.zip  
+sftp> put 1.jpeg
+Uploading 1.jpeg to /home/cs17d51/1.jpeg
+1.jpeg                                                                                                                               100%   29KB  46.5KB/s   00:00    
+sftp> put 2.jpeg
+Uploading 2.jpeg to /home/cs17d51/2.jpeg
+2.jpeg                                                                                                                               100%   46KB  45.2KB/s   00:01    
+sftp> put 3.jpeg
+Uploading 3.jpeg to /home/cs17d51/3.jpeg
+3.jpeg                                                                                                                               100%   39KB  43.9KB/s   00:00    
+sftp> put 4.jpeg
+Uploading 4.jpeg to /home/cs17d51/4.jpeg
+4.jpeg                                                                                                                               100%   36KB  43.1KB/s   00:00    
+sftp> exit
+s4d@user-In
