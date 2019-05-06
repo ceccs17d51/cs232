@@ -1,0 +1,6 @@
+4d@user-Inspiron-15-3567:~$ curl -fLO "https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.0.9.tar.xz"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  100M  100  100M    0     0   275k      0  0:06:13  0:06:13 --:--:--  406k
+s4d@user-Inspiron-15-3567:~$ 
+
