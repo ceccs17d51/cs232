@@ -1,0 +1,251 @@
+[Mon May 06 11:21:26.028727 2019] [core:warn] [pid 9328:tid 140064595806080] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+AH00526: Syntax error on line 74 of /etc/apache2/apache2.conf:
+Invalid Mutex directory in argument file:${APACHE_LOCK_DIR}
+cec-lab2@CC2-28:/home/s4d2$ nginx -s stop\
+> ^C
+cec-lab2@CC2-28:/home/s4d2$ sudo nginx -s stop
+cec-lab2@CC2-28:/home/s4d2$ sudo apache2 -k stop
+[Mon May 06 11:21:47.293205 2019] [core:warn] [pid 9361] AH00111: Config variable ${APACHE_LOCK_DIR} is not defined
+[Mon May 06 11:21:47.293262 2019] [core:warn] [pid 9361] AH00111: Config variable ${APACHE_PID_FILE} is not defined
+[Mon May 06 11:21:47.293276 2019] [core:warn] [pid 9361] AH00111: Config variable ${APACHE_RUN_USER} is not defined
+[Mon May 06 11:21:47.293280 2019] [core:warn] [pid 9361] AH00111: Config variable ${APACHE_RUN_GROUP} is not defined
+[Mon May 06 11:21:47.293289 2019] [core:warn] [pid 9361] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Mon May 06 11:21:47.294318 2019] [core:warn] [pid 9361:tid 140130035263360] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Mon May 06 11:21:47.294398 2019] [core:warn] [pid 9361:tid 140130035263360] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Mon May 06 11:21:47.294407 2019] [core:warn] [pid 9361:tid 140130035263360] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+AH00526: Syntax error on line 74 of /etc/apache2/apache2.conf:
+Invalid Mutex directory in argument file:${APACHE_LOCK_DIR}
+cec-lab2@CC2-28:/home/s4d2$ sudo apache2 -k start
+[Mon May 06 11:21:51.013308 2019] [core:warn] [pid 9363] AH00111: Config variable ${APACHE_LOCK_DIR} is not defined
+[Mon May 06 11:21:51.013370 2019] [core:warn] [pid 9363] AH00111: Config variable ${APACHE_PID_FILE} is not defined
+[Mon May 06 11:21:51.013387 2019] [core:warn] [pid 9363] AH00111: Config variable ${APACHE_RUN_USER} is not defined
+[Mon May 06 11:21:51.013393 2019] [core:warn] [pid 9363] AH00111: Config variable ${APACHE_RUN_GROUP} is not defined
+[Mon May 06 11:21:51.013403 2019] [core:warn] [pid 9363] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Mon May 06 11:21:51.014975 2019] [core:warn] [pid 9363:tid 139817246635904] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Mon May 06 11:21:51.015090 2019] [core:warn] [pid 9363:tid 139817246635904] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Mon May 06 11:21:51.015101 2019] [core:warn] [pid 9363:tid 139817246635904] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+AH00526: Syntax error on line 74 of /etc/apache2/apache2.conf:
+Invalid Mutex directory in argument file:${APACHE_LOCK_DIR}
+cec-lab2@CC2-28:/home/s4d2$ ^C
+cec-lab2@CC2-28:/home/s4d2$ exit
+exit
+s4d2@CC2-28:~$ sftp cs17d51@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d51@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> put index.html
+Uploading index.html to /home/cs17d51/index.html
+index.html                                                              100% 4738     4.6KB/s   00:00    
+sftp> ls
+1.jpeg               2.jpeg               3.jpeg               4.jpeg               cs232-master.zip     
+index.html           packagemanagement    
+sftp> cd cs232-master.zip 
+Can't change directory: "/home/cs17d51/cs232-master.zip" is not a directory
+sftp> get 1.jpeg
+Fetching /home/cs17d51/1.jpeg to 1.jpeg
+/home/cs17d51/1.jpeg                                                    100%   29KB  29.4KB/s   00:00    
+sftp> exit
+s4d2@CC2-28:~$ sftp
+usage: sftp [-1246aCfpqrv] [-B buffer_size] [-b batchfile] [-c cipher]
+          [-D sftp_server_path] [-F ssh_config] [-i identity_file] [-l limit]
+          [-o ssh_option] [-P port] [-R num_requests] [-S program]
+          [-s subsystem | sftp_server] host
+       sftp [user@]host[:file ...]
+       sftp [user@]host[:dir[/]]
+       sftp -b batchfile [user@]host
+s4d2@CC2-28:~$ 
+s4d2@CC2-28:~$ su - cec-lab2
+Password: 
+cec-lab2@CC2-28:~$ sudo apt remove --purge apache2
+[sudo] password for cec-lab2: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages will be REMOVED:
+  apache2*
+0 upgraded, 0 newly installed, 1 to remove and 49 not upgraded.
+After this operation, 476 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 189006 files and directories currently installed.)
+Removing apache2 (2.4.7-1ubuntu4.22) ...
+ * Stopping web server apache2                                                                             * 
+Purging configuration files for apache2 (2.4.7-1ubuntu4.22) ...
+dpkg: warning: while removing apache2, directory '/var/www/html' not empty so not removed
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for ufw (0.34~rc-0ubuntu2) ...
+Rules updated for profile 'Nginx HTTP'
+
+cec-lab2@CC2-28:~$ sudo apt install apache2
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Suggested packages:
+  apache2-doc apache2-suexec-pristine apache2-suexec-custom apache2-utils
+The following NEW packages will be installed:
+  apache2
+0 upgraded, 1 newly installed, 0 to remove and 49 not upgraded.
+Need to get 0 B/87.4 kB of archives.
+After this operation, 476 kB of additional disk space will be used.
+Selecting previously unselected package apache2.
+(Reading database ... 188810 files and directories currently installed.)
+Preparing to unpack .../apache2_2.4.7-1ubuntu4.22_amd64.deb ...
+Unpacking apache2 (2.4.7-1ubuntu4.22) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for ufw (0.34~rc-0ubuntu2) ...
+Rules updated for profile 'Nginx HTTP'
+
+Processing triggers for ureadahead (0.100.0-16) ...
+Setting up apache2 (2.4.7-1ubuntu4.22) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+ * Starting web server apache2                                                                            AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+ * 
+Processing triggers for ufw (0.34~rc-0ubuntu2) ...
+Rules updated for profile 'Apache'
+Rules updated for profile 'Nginx HTTP'
+
+Processing triggers for ureadahead (0.100.0-16) ...
+cec-lab2@CC2-28:~$ sudo apache2 -k start
+[Mon May 06 11:51:05.783800 2019] [core:warn] [pid 11879] AH00111: Config variable ${APACHE_LOCK_DIR} is not defined
+[Mon May 06 11:51:05.783837 2019] [core:warn] [pid 11879] AH00111: Config variable ${APACHE_PID_FILE} is not defined
+[Mon May 06 11:51:05.783848 2019] [core:warn] [pid 11879] AH00111: Config variable ${APACHE_RUN_USER} is not defined
+[Mon May 06 11:51:05.783852 2019] [core:warn] [pid 11879] AH00111: Config variable ${APACHE_RUN_GROUP} is not defined
+[Mon May 06 11:51:05.783858 2019] [core:warn] [pid 11879] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Mon May 06 11:51:05.784846 2019] [core:warn] [pid 11879:tid 140668409276288] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Mon May 06 11:51:05.784909 2019] [core:warn] [pid 11879:tid 140668409276288] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Mon May 06 11:51:05.784916 2019] [core:warn] [pid 11879:tid 140668409276288] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+AH00526: Syntax error on line 74 of /etc/apache2/apache2.conf:
+Invalid Mutex directory in argument file:${APACHE_LOCK_DIR}
+cec-lab2@CC2-28:~$ man apachectl 
+cec-lab2@CC2-28:~$ sudo apachectl start
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+httpd (pid 11758) already running
+cec-lab2@CC2-28:~$ sudo system apache2 enable
+sudo: system: command not found
+cec-lab2@CC2-28:~$ cd/var/www/html
+-su: cd/var/www/html: No such file or directory
+cec-lab2@CC2-28:~$ cd /var/www/html/
+cec-lab2@CC2-28:/var/www/html$ ls
+index.html
+cec-lab2@CC2-28:/var/www/html$ rm index.nginx-debian.html
+rm: cannot remove ‘index.nginx-debian.html’: No such file or directory
+cec-lab2@CC2-28:/var/www/html$ gedit index.html
+No protocol specified
+
+** (gedit:12149): WARNING **: Could not open X display
+No protocol specified
+error: XDG_RUNTIME_DIR not set in the environment.
+
+(gedit:12149): Gtk-WARNING **: cannot open display: :0
+cec-lab2@CC2-28:/var/www/html$ gedit index.html
+No protocol specified
+
+** (gedit:12152): WARNING **: Could not open X display
+No protocol specified
+error: XDG_RUNTIME_DIR not set in the environment.
+
+(gedit:12152): Gtk-WARNING **: cannot open display: :0
+cec-lab2@CC2-28:/var/www/html$ gedit index.html
+No protocol specified
+
+** (gedit:12164): WARNING **: Could not open X display
+No protocol specified
+error: XDG_RUNTIME_DIR not set in the environment.
+
+(gedit:12164): Gtk-WARNING **: cannot open display: :0
+cec-lab2@CC2-28:/var/www/html$ sudo nano index.html
+cec-lab2@CC2-28:/var/www/html$ ls
+index.html
+cec-lab2@CC2-28:/var/www/html$ sudo apt install mariadb-server
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+mariadb-server is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 49 not upgraded.
+cec-lab2@CC2-28:/var/www/html$ sudo mysql_secure_installation
+/usr/bin/mysql_secure_installation: 393: /usr/bin/mysql_secure_installation: find_mysql_client: not found
+
+NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
+      SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
+
+In order to log into MariaDB to secure it, we'll need the current
+password for the root user.  If you've just installed MariaDB, and
+you haven't set the root password yet, the password will be blank,
+so you should just press enter here.
+
+Enter current password for root (enter for none): 
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+Enter current password for root (enter for none): 
+OK, successfully used password, moving on...
+
+Setting the root password ensures that nobody can log into the MariaDB
+root user without the proper authorisation.
+
+You already have a root password set, so you can safely answer 'n'.
+
+Change the root password? [Y/n] n
+ ... skipping.
+
+By default, a MariaDB installation has an anonymous user, allowing anyone
+to log into MariaDB without having to have a user account created for
+them.  This is intended only for testing, and to make the installation
+go a bit smoother.  You should remove them before moving into a
+production environment.
+
+Remove anonymous users? [Y/n] y
+ ... Success!
+
+Normally, root should only be allowed to connect from 'localhost'.  This
+ensures that someone cannot guess at the root password from the network.
+
+Disallow root login remotely? [Y/n] n
+ ... skipping.
+
+By default, MariaDB comes with a database named 'test' that anyone can
+access.  This is also intended only for testing, and should be removed
+before moving into a production environment.
+
+Remove test database and access to it? [Y/n] n
+ ... skipping.
+
+Reloading the privilege tables will ensure that all changes made so far
+will take effect immediately.
+
+Reload privilege tables now? [Y/n] n
+ ... skipping.
+
+Cleaning up...
+
+All done!  If you've completed all of the above steps, your MariaDB
+installation should now be secure.
+
+Thanks for using MariaDB!
+cec-lab2@CC2-28:/var/www/html$ ^C
+cec-lab2@CC2-28:/var/www/html$ 
+
