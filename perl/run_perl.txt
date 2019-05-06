@@ -1,0 +1,19 @@
+
+
+s4d2@CC2-28:~$ perl perl.pl
+Given names are : John Paul Lisa Kumar
+Number of names are : 3
+s4d2@CC2-28:~$ 
+
+
+
+
+
+
+
+ perl perl1.pl
+$data{'John Paul'} = 45
+$data{'Lisa'} = 30
+$data{'Kumar'} = 40
+
+
