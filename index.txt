@@ -1,0 +1,15 @@
+s4d@user-Inspiron-15-3567:~$ sftp cs17d51@14.139.189.217
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d51@14.139.189.217's password: 
+Connected to 14.139.189.217.
+sftp> rm index.html
+Removing /home/cs17d51/index.html
+sftp> put index.html
+Uploading index.html to /home/cs17d51/index.html
+index.html                                                                                                                           100% 5574     5.4KB/s   00:01    
+sftp> exit
+
