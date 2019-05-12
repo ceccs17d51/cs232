@@ -1,0 +1,13 @@
+s4d@user-Inspiron-15-3567:~$ chmod +x exp_4.sh 
+s4d@user-Inspiron-15-3567:~$ sh exp_4.sh 
+s4d
+s4d
+/bin/bash
+
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+/home/s4d
+1
+s4d@user-Inspiron-15-3567:~$ 
+
+
+
