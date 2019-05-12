@@ -5,4 +5,4 @@ ls
 rsync -ah --info=progress2 abc cs17d36@192.168.0.30:~/
 scp cs17d51@192.168.0.30:~/abc ./
 ls
-exit
+exit 
